@@ -1,9 +1,9 @@
+import FavoriteRestoIdb from '../data/favoriteresto_idb.js';
 import '../views/components/like-button.js';
 
-const LikeButtonPresenter = {
-  async init({likeContainer, favoriteResto, resto}) {
+const LikeButtonInitiator = {
+  async init({likeContainer, resto}) {
     this._likeContainer = likeContainer;
-    this._favoriteResto = favoriteResto;
     this._resto = resto;
 
     await this._renderButton();
@@ -20,7 +20,7 @@ const LikeButtonPresenter = {
   },
 
   async _isRestoExist(id) {
-    const resto = await this._favoriteResto.getResto(id);
+    const resto = await FavoriteRestoIdb.getResto(id);
     return !!resto;
   },
 
@@ -30,7 +30,7 @@ const LikeButtonPresenter = {
     this._likeContainer.appendChild(likeButton);
 
     likeButton.addEventListener('click', async () => {
-      await this._favoriteResto.putResto(this._resto);
+      await FavoriteRestoIdb.putResto(this._resto);
       this._renderButton();
     });
   },
@@ -41,10 +41,10 @@ const LikeButtonPresenter = {
     this._likeContainer.appendChild(likeButton);
 
     likeButton.addEventListener('click', async () => {
-      await this._favoriteResto.deleteResto(this._resto.id);
+      await FavoriteRestoIdb.deleteResto(this._resto.id);
       this._renderButton();
     });
   },
 };
 
-export default LikeButtonPresenter;
+export default LikeButtonInitiator;

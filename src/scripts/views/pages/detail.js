@@ -1,7 +1,6 @@
 import RestaurantDB from '../../data/restaurant_db.js';
 import UrlParser from '../../routes/url-parser.js';
-import LikeButtonPresenter from '../../utils/like-presenter';
-import FavoriteRestoIdb from '../../data/favoriteresto_idb.js';
+import LikeButtonInitiator from '../../utils/like-initiator.js';
 import '../components/detail-page.js';
 
 const Detail = {
@@ -34,9 +33,8 @@ const Detail = {
     };
     detailPage.clickEvent = postReview;
 
-    LikeButtonPresenter.init({
+    LikeButtonInitiator.init({
       likeContainer: document.querySelector('#likeContainer'),
-      favoriteResto: FavoriteRestoIdb,
       resto: {
         id: restaurant.restaurant.id,
         pictureId: restaurant.restaurant.pictureId,

@@ -27,7 +27,7 @@ class DetailPage extends HTMLElement {
 
   render() {
     this.innerHTML=`
-                <img class="lazyload" src="${CONFIG.IMAGE_URL_L+this._detail.pictureId}" alt="${this._detail.name}">
+                <img src="${CONFIG.IMAGE_URL_L+this._detail.pictureId}" alt="${this._detail.name}">
                 <h2>Restaurant Detail</h2>
                 <h3 class="name">${this._detail.name}</h3>
                 <h4>Address</h4>

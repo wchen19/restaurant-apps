@@ -16,17 +16,9 @@ const Favorite = {
   async afterRender() {
     const restaurants = await FavoriteRestoIdb.getAllResto();
     const content = document.querySelector('#content');
-
-    if (restaurants.length === 0) {
-      const favoriteResto=document.createElement('resto-card');
-      const title = document.querySelector('#mainContent');
-      favoriteResto.resto = restaurants;
-      title.appendChild(favoriteResto);
-    }
-
     restaurants.forEach((restaurant) => {
       const favoriteResto=document.createElement('resto-card');
-      favoriteResto.resto = restaurant;
+      favoriteResto.resto=restaurant;
       content.appendChild(favoriteResto);
     });
   },

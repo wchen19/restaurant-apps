@@ -1,14 +1,6 @@
 import 'regenerator-runtime';
 import '../styles/main.css';
-import '../styles/detail.css';
-import '../styles/header.css';
-import '../styles/hero.css';
-import '../styles/help-form.css';
-import '../styles/responsive.css';
-import '../public/images/heros/hero-image_2-large.jpg';
-import '../public/images/heros/hero-image_2-small.jpg';
-import 'lazysizes';
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+import '../public/images/heros/hero-image_2.jpg';
 import App from './views/app.js';
 import swRegister from './utils/sw-register.js';
 
