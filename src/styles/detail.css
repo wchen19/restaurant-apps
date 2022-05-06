@@ -1,0 +1,103 @@
+main .detail {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main .detail img {
+    display: block;
+    margin: 100px auto 0;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+}
+
+main .detail h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+main .detail h3 {
+    text-align: center;
+    font-size: 24px;
+}
+
+main .detail h4 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+main .detail p {
+    margin-top: 5px;
+}
+
+main .detail div {
+    margin-top: 5px;
+}
+
+main .detail .like {
+    font-size: 18px;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    background-color: #0d6eec;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .detail .review-form {
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+main .detail .review-form input {
+    margin-top: 10px;
+    padding: 12.5px;
+    width: 100%;
+}
+
+main .detail .review-form button {
+    margin: 10px auto 0;
+    padding: 12.5px 0;
+    width: 70%;
+    border: none;
+}
+
+main .detail .review-form button:hover {
+    font-weight: bold;
+}
+
+main .detail .customer-review {
+    margin-top: 15px;
+    background-color: burlywood;
+    padding: 0 10px;
+}
+
+main .detail .customer-review review-box {
+    background-color: #e9b067;
+}
+
+main .detail .customer-review review-box h5 {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+main .detail .customer-review review-box .date {
+    font-style: italic;
+    font-size: 14px;
+}
+
+main .detail .customer-review review-box .review {
+    padding-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
