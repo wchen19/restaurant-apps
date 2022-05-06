@@ -1,5 +1,5 @@
-const CONFIG={
-  BASE_URL: 'https://restaurant-api.dicoding.dev/',
+const CONFIG = {
+  BASE_URL: 'https://restaurant-api.dicoding.dev',
   IMAGE_URL_S: 'https://restaurant-api.dicoding.dev/images/small/',
   IMAGE_URL_M: 'https://restaurant-api.dicoding.dev/images/medium/',
   IMAGE_URL_L: 'https://restaurant-api.dicoding.dev/images/large/',
